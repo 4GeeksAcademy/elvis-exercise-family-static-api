@@ -58,9 +58,9 @@ def add_member():
     if 'first_name' not in body:
         return 'You need to specify the first_name', 400
     if 'age' not in body:
-        return 'You need to specify the first_name', 400
+        return 'You need to specify the age', 400
     if 'lucky_numbers' not in body:
-        return 'You need to specify the first_name', 400
+        return 'You need to specify the lucky_numbers', 400
     
     added_member = jackson_family.add_member({
         "first_name": body["first_name"],
